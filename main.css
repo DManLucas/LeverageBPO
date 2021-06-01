@@ -486,7 +486,7 @@ h2 {
   transform-style: preserve-3d;
   transition: ease all 2.3s;
   z-index: 3;
-  font-size: 3em;
+  font-size: 1em;
   transform: translateZ(0px);
 }
 .card .cover {
