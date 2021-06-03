@@ -26,6 +26,10 @@ i {
 /*----------End of Grad Bar------------*/
 
 /*----------multi-level-accordian-menu------------*/
+.navbar {
+  /*----------Push the navigation bar to the top------------*/
+  z-index: 999; 
+}
 .navbar-logo {
   padding: 15px;
   color: #fff;
