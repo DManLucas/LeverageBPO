@@ -183,6 +183,7 @@ i {
 /*----------Hero Image------------*/
 .hero {
   height: 100vh;
+  filter: brightness(70%);
   width: 100%;
   position: fixed;
   top: 0;
