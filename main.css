@@ -3,7 +3,7 @@
 .grad-bar {
   width: 100%;
   height: 5px;
-  background: linear-gradient(-45deg, #96f088, #203d1b, #609657, #23d5ab);
+  background: linear-gradient(-45deg, #96f088, #203d1b, #609657, #44d62c);
   background-size: 400% 400%;
   -webkit-animation: gradbar 15s ease infinite;
   -moz-animation: gradbar 15s ease infinite;
@@ -23,15 +23,24 @@ i {
   margin-right: 10px;
 }
 
+.align {
+  text-align: center;
+}
+
 /*----------End of Grad Bar------------*/
 
 /*----------multi-level-accordian-menu------------*/
+.navbar.navbar.navbar {
+  /*----------Push the navigation bar to the top------------*/
+  z-index: 999;
+}
+
 .navbar-logo {
   padding: 15px;
   color: #fff;
 }
 .navbar-mainbg {
-  background-color: #23d5ab;
+  background-color: #44d62c;
   padding: 0px;
 }
 #navbarSupportedContent {
@@ -60,7 +69,7 @@ i {
   position: relative;
 }
 #navbarSupportedContent > ul > li.active > a {
-  color: #23d5ab;
+  color: #44d62c;
   background-color: transparent;
   transition: all 0.7s;
 }
@@ -114,7 +123,7 @@ i {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #23d5ab;
+  background-color: #44d62c;
 }
 .hori-selector .right:before {
   bottom: 0;
@@ -274,7 +283,7 @@ h6 {
   margin-bottom: 60px;
   -webkit-appearance: none;
   appearance: none;
-  background-color: #23d5ab;
+  background-color: #44d62c;
   color: #fff;
   border-radius: 4px;
   border: none;
@@ -301,33 +310,33 @@ h6 {
 .bubbly-button:before {
   display: none;
   top: -75%;
-  background-image: radial-gradient(circle, #23d5ab 20%, transparent 20%),
-    radial-gradient(circle, transparent 20%, #23d5ab 20%, transparent 30%),
-    radial-gradient(circle, #23d5ab 20%, transparent 20%),
-    radial-gradient(circle, #23d5ab 20%, transparent 20%),
-    radial-gradient(circle, transparent 10%, #23d5ab 15%, transparent 20%),
-    radial-gradient(circle, #23d5ab 20%, transparent 20%),
-    radial-gradient(circle, #23d5ab 20%, transparent 20%),
-    radial-gradient(circle, #23d5ab 20%, transparent 20%),
-    radial-gradient(circle, #23d5ab 20%, transparent 20%);
+  background-image: radial-gradient(circle, #44d62c 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #44d62c 20%, transparent 30%),
+    radial-gradient(circle, #44d62c 20%, transparent 20%),
+    radial-gradient(circle, #44d62c 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #44d62c 15%, transparent 20%),
+    radial-gradient(circle, #44d62c 20%, transparent 20%),
+    radial-gradient(circle, #44d62c 20%, transparent 20%),
+    radial-gradient(circle, #44d62c 20%, transparent 20%),
+    radial-gradient(circle, #44d62c 20%, transparent 20%);
   background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
     10% 10%, 18% 18%;
 }
 .bubbly-button:after {
   display: none;
   bottom: -75%;
-  background-image: radial-gradient(circle, #23d5ab 20%, transparent 20%),
-    radial-gradient(circle, #23d5ab 20%, transparent 20%),
-    radial-gradient(circle, transparent 10%, #23d5ab 15%, transparent 20%),
-    radial-gradient(circle, #23d5ab 20%, transparent 20%),
-    radial-gradient(circle, #23d5ab 20%, transparent 20%),
-    radial-gradient(circle, #23d5ab 20%, transparent 20%),
-    radial-gradient(circle, #23d5ab 20%, transparent 20%);
+  background-image: radial-gradient(circle, #44d62c 20%, transparent 20%),
+    radial-gradient(circle, #44d62c 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #44d62c 15%, transparent 20%),
+    radial-gradient(circle, #44d62c 20%, transparent 20%),
+    radial-gradient(circle, #44d62c 20%, transparent 20%),
+    radial-gradient(circle, #44d62c 20%, transparent 20%),
+    radial-gradient(circle, #44d62c 20%, transparent 20%);
   background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
 }
 .bubbly-button:active {
   transform: scale(0.9);
-  background-color: #23d5ab;
+  background-color: #44d62c;
   box-shadow: 0 2px 25px rgba(43, 255, 0, 0.2);
 }
 .bubbly-button.animate:before {
@@ -376,7 +385,7 @@ html {
 }
 
 .cont-links {
-  background-color: #23d5ab;
+  background-color: #44d62c;
   text-decoration: none;
   color: white;
   border-radius: 0.25rem;
@@ -440,4 +449,186 @@ html {
 .cont-link > ul > li > a {
   padding: 0.5rem 1rem;
   margin: 0.5rem;
+}
+
+/*Tabs*/
+.wrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.tabs {
+  position: relative;
+  margin: 3rem 0;
+  background: #44d62c;
+  height: 14.75rem;
+}
+.tabs::before,
+.tabs::after {
+  content: '';
+  display: table;
+}
+.tabs::after {
+  clear: both;
+}
+.tab {
+  float: left;
+}
+.tab-switch {
+  display: none;
+}
+.tab-label {
+  position: relative;
+  display: block;
+  line-height: 2.75em;
+  height: 3em;
+  padding: 0 1.618em;
+  background: #44d62c;
+  border-right: 0.125rem solid #16a085;
+  color: #fff;
+  cursor: pointer;
+  top: 0;
+  transition: all 0.25s;
+}
+.tab-label:hover {
+  top: -0.25rem;
+  transition: top 0.25s;
+}
+.tab-content {
+  height: 12rem;
+  position: absolute;
+  top: 2.75em;
+  left: 0;
+  padding: 1.618rem;
+  background: #fff;
+  color: #2c3e50;
+  border-bottom: 0.25rem solid #bdc3c7;
+  opacity: 0;
+  transition: all 0.35s;
+}
+.tab-switch:checked + .tab-label {
+  background: #fff;
+  color: #2c3e50;
+  border-bottom: 0;
+  border-right: 0.125rem solid #fff;
+  transition: all 0.35s;
+  top: -0.0625rem;
+}
+.tab-switch:checked + label + .tab-content {
+  opacity: 1;
+  transition: all 0.35s;
+}
+
+/*Rotate Cards*/
+.card {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  margin: 10px 0;
+  transition: ease all 2.3s;
+  perspective: 2000px;
+}
+.card:hover .cover {
+  transform: rotateX(-10deg) rotateY(-180deg);
+}
+.card:hover .cover:before {
+  transform: translateZ(30px);
+}
+.card:hover .cover:after {
+  background-color: black;
+}
+.card:hover .cover h1 {
+  transform: translateZ(100px);
+}
+.card:hover .cover .price {
+  transform: translateZ(60px);
+}
+.card:hover .cover a {
+  transform: translateZ(-60px) rotatey(-180deg);
+}
+.card .cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+}
+.card .cover:before {
+  content: '';
+  position: absolute;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+  transition: ease all 2.3s;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+}
+.card .cover:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2;
+  transition: ease all 1.3s;
+  background: rgba(0, 0, 0, 0.4);
+}
+.card .cover.item-a {
+  background: url('images/truck.png') center center no-repeat;
+  background-size: cover;
+}
+.card .cover.item-b {
+  background: url('images/truck.png') center center no-repeat;
+  background-size: cover;
+}
+.card .cover.item-c {
+  background: url('images/truck.png') center center no-repeat;
+  background-size: cover;
+}
+
+.card .cover h1 {
+  font-weight: 600;
+  position: absolute;
+  bottom: 55px;
+  left: 50px;
+  color: white;
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+  z-index: 3;
+  font-size: 3em;
+  transform: translateZ(0px);
+}
+.card .card-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #0b0f08;
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+  transform: translateZ(-1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .card-back a {
+  transform-style: preserve-3d;
+  transition: ease transform 2.3s, ease background 0.5s;
+  transform: translateZ(-1px) rotatey(-180deg);
+  background: transparent;
+  border: 1px solid white;
+  font-weight: 200;
+  font-size: 1.3em;
+  color: white;
+  padding: 14px 32px;
+  outline: none;
+  text-decoration: none;
+}
+.card .card-back a:hover {
+  background-color: white;
+  color: #0b0f08;
 }
